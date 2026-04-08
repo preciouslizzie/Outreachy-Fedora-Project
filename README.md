@@ -1,16 +1,16 @@
-# 🚀 Outreachy Fedora Project — RamaLama Exploration
+#  Outreachy Fedora Project — RamaLama Exploration
 
-## 🧠 Introduction
+## Introduction
 
 At first glance, this task looked simple: install RamaLama, run a model, and move on.
 
-But very quickly, it turned into something deeper — understanding how AI tools behave under the hood, especially when they don’t cooperate 😄
+But very quickly, it turned into something deeper — understanding how AI tools behave under the hood, especially when they don’t cooperate
 
 This documentation captures not just what worked, but also what didn’t, and how I navigated through it.
 
 ---
 
-## ⚙️ Environment
+##  Environment
 
 * **OS:** Windows (WSL - Ubuntu)
 * **Python:** 3.12.3
@@ -18,7 +18,7 @@ This documentation captures not just what worked, but also what didn’t, and ho
 
 ---
 
-## 🪜 Step 1: Install RamaLama
+##  Step 1: Install RamaLama
 
 ### Command:
 
@@ -36,12 +36,11 @@ pipx install ramalama
 installed package ramalama 0.18.0, installed using Python 3.12.3
 These apps are now globally available
   - ramalama
-done! ✨ 🌟 ✨
 ```
 
 ---
 
-## 🪜 Step 2: Display Version
+##  Step 2: Display Version
 
 ### Command:
 
@@ -57,7 +56,7 @@ ramalama version 0.18.0
 
 ---
 
-## 🪜 Step 3: Pull First Model (Attempt 1 - Hugging Face)
+##  Step 3: Pull First Model (Attempt 1 - Hugging Face)
 
 ### Command:
 
@@ -73,7 +72,7 @@ Error: Manifest for flan-t5-base:latest was not found in the Ollama registry
 
 ---
 
-## 🤔 What Happened?
+##  What Happened?
 
 This was unexpected.
 
@@ -89,7 +88,7 @@ I got the same error.
 
 ---
 
-## 💡 Decision
+# Decision
 
 Instead of forcing it, I adapted.
 
@@ -97,7 +96,7 @@ Since RamaLama was clearly leaning toward Ollama, I decided to work with Ollama 
 
 ---
 
-## 🪜 Step 4: Install Ollama
+##  Step 4: Install Ollama
 
 ### Command:
 
@@ -119,7 +118,7 @@ sudo apt install zstd -y
 
 ---
 
-## ⚠️ Service Behavior
+##  Service Behavior
 
 ### Command:
 
@@ -139,7 +138,7 @@ Ollama was already running in the background after installation.
 
 ---
 
-## 🪜 Step 5: Pull First Working Model (Ollama)
+##  Step 5: Pull First Working Model (Ollama)
 
 ### Command:
 
@@ -157,7 +156,7 @@ success
 
 ---
 
-## 🪜 Step 6: Run Model (Direct Ollama)
+##  Step 6: Run Model (Direct Ollama)
 
 ### Command:
 
@@ -184,7 +183,7 @@ The Four Foundations of the Fedora Project are:
 
 ---
 
-## 🪜 Step 7: Use RamaLama with Ollama
+##  Step 7: Use RamaLama with Ollama
 
 ### Pull via RamaLama:
 
@@ -213,7 +212,7 @@ Freedom, Friends, Features, and First are the core foundations of the Fedora Pro
 
 ---
 
-## 🔁 Step 8: Second Model (Different Attempt)
+##  Step 8: Second Model (Different Attempt)
 
 ### Command:
 
@@ -235,7 +234,7 @@ The Fedora Project is guided by four principles: Freedom, Friends, Features, and
 
 ---
 
-## 📊 Comparison & Analysis
+##  Comparison & Analysis
 
 | Model        | Transport    | Behavior | Output Quality |
 | ------------ | ------------ | -------- | -------------- |
@@ -245,7 +244,7 @@ The Fedora Project is guided by four principles: Freedom, Friends, Features, and
 
 ---
 
-## 🧠 Observations
+##  Observations
 
 * RamaLama defaults to Ollama in my environment
 * Hugging Face transport did not work as expected
@@ -254,7 +253,7 @@ The Fedora Project is guided by four principles: Freedom, Friends, Features, and
 
 ---
 
-## 🧩 Challenges Faced
+##  Challenges Faced
 
 * Hugging Face model not resolving correctly
 * Missing dependency (`zstd`)
@@ -263,7 +262,7 @@ The Fedora Project is guided by four principles: Freedom, Friends, Features, and
 
 ---
 
-## 🤔 Does RamaLama Make AI “Boring”?
+##  Does RamaLama Make AI “Boring”?
 
 Honestly… yes.
 
@@ -282,7 +281,7 @@ The “boring” came after things finally clicked.
 
 ---
 
-## 💡 Final Thoughts
+##  Final Thoughts
 
 This task taught me more than just commands.
 
@@ -296,7 +295,7 @@ RamaLama does simplify AI workflows, but understanding what happens underneath m
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 
 I successfully:
 
@@ -311,4 +310,4 @@ And most importantly, I now understand the system beyond just surface-level usag
 
 ---
 
-✨ If anything, this wasn’t just setup… it was initiation.
+ If anything, this wasn’t just setup… it was initiation.
